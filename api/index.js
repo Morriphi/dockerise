@@ -1,4 +1,3 @@
 const app = require('./src/api');
 
-app.listen(80);
-
+app.listen(process.env.PORT);

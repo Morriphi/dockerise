@@ -1,4 +1,5 @@
 FROM node
 ADD . /app
 WORKDIR /app
-CMD npm run dev 
+ENV PORT 80
+CMD npm run dev
