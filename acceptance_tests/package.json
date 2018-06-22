@@ -1,0 +1,15 @@
+{
+  "name": "acceptance_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./src/tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "zombie": "^4.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha api/test && mocha web/test",
+    "start": "docker-compose build && docker-compose up",
+    "clean": "docker-compose kill && docker-compose rm"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}

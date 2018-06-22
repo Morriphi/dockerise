@@ -1,0 +1,20 @@
+web:
+  build: web/
+  ports: 
+    - "3000:3000"
+  links:
+    - api
+  volumes:
+    - ./web:/app
+  command: node index.js 
+
+api:
+  build: api/
+  links:
+    - redis
+  volumes:
+    - ./api:/app
+
+redis:
+  image: redis
+
